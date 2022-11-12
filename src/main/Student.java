@@ -7,16 +7,6 @@ public class Student {
     private String className;
     private int balance=0;
 
-    public Student() {
-    }
-
-    public Student(String name, String surname, int age, String className, int balance) {
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-        this.className = className;
-        this.balance = balance;
-    }
     public Student(String name, String surname, int age, String className) {
         this.name = name;
         this.surname = surname;
@@ -79,7 +69,7 @@ public class Student {
     }
 
     public String getInfo(){
-       return "name: "+getName()+ ", surname: "+getSurname()+
-               ", age: "+getAge()+", clssName: "+getClassName();
+       return "Name: "+getName()+ ", SurName: "+getSurname()+
+               ", Age: "+getAge()+", ClassName: "+getClassName();
     }
 }
